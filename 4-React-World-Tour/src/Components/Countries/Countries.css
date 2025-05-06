@@ -1,0 +1,22 @@
+.countries{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+.flags-container img{
+    width: 100px;
+}
+@media only screen and (max-width:768px) {
+    .countries {
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap: 10px;
+        }
+}
+@media only screen and (max-width:320px) {
+    .countries {
+            display: grid;
+            grid-template-columns:1fr;
+            gap: 10px;
+        }
+}

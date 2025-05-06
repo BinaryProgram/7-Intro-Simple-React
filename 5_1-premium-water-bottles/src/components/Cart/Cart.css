@@ -1,0 +1,15 @@
+.cart-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.cart-container img{
+    width: 100px;
+}
+.remove-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

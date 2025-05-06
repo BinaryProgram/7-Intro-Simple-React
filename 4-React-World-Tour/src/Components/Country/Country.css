@@ -1,0 +1,30 @@
+.country {
+    border-radius: 20px;
+    border: 2px solid dodgerblue;
+    padding: 20px;
+    margin: 20px;
+}
+.visitedBg1{
+    background-color: dodgerblue;
+}
+.notVisitedBg{
+    background-color: coral;
+}
+
+@media only screen and (max-width:320) {
+    .country {
+        border-radius: 20px;
+        border: 2px solid dodgerblue;
+        padding: 20px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .country {
+        border-radius: 20px;
+        border: 2px solid dodgerblue;
+        padding: 20px;
+        margin:0;
+    }
+}
