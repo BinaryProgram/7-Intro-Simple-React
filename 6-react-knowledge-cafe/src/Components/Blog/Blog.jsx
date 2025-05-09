@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { PiBookmarkSimple } from "react-icons/pi";
 
 const Blog = (props) => {
-  const { blog } = props;
+  const { blog,handleAddBookmarks,handleMarkAsRead } = props;
+
   return (
     <div style={{ marginTop: blog.check > 10 ? "50px" : "0" }}>
       <img className="rounded-lg" src={blog.cover_image} alt="cover image" />
@@ -27,19 +28,19 @@ const Blog = (props) => {
             <h2 className="text-xl font-medium text-[#11111190]">
               {blog.reading_time} min read
             </h2>
-            <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-2xl">
+            <button onClick={() => handleAddBookmarks(blog)} className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl text-2xl">
               <PiBookmarkSimple></PiBookmarkSimple>
             </button>
           </div>
         </article>
         <article className="mt-6">
           <p className="text-4xl font-bold text-[#111]">{blog.title}</p>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 mt-4">
             {blog.hashtag.map((item,id) => (
-              <h3 key={id}>{item}</h3>
+              <h3 key={id} className="text-xl text-[#11111190] font-medium">{item}</h3>
             ))}
           </div>
-          <a className="link underline">Mark as read</a>
+          <div className="mt-4"><a onClick={() => handleMarkAsRead(blog.reading_time,blog.id)} href="#" className="link underline text-[#6047ec] font-semibold text-xl">Mark as read</a></div>
         </article>
       </div>
     </div>

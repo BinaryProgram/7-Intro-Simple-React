@@ -12,7 +12,7 @@
   },
 
   {
-    "id": 3,
+    "id": 2,
     "check": 20,
     "title": "UX Design Tips for Modern Apps",
     "cover_image": "https://i.postimg.cc/cLQj0GZ3/3.png",
@@ -23,7 +23,7 @@
     "hashtag": ["#design", "#ux"]
   },
   {
-    "id": 4,
+    "id": 3,
     "check": 30,
     "title": "Cloud Computing Trends in 2025",
     "cover_image": "https://i.postimg.cc/DZzYrWGQ/4.jpg",
@@ -34,7 +34,7 @@
     "hashtag": ["#cloud", "#devops"]
   },
   {
-    "id": 2,
+    "id": 4,
     "check": 40,
     "title": "Mastering JavaScript in 2025",
     "cover_image": "https://i.postimg.cc/8k0xbbt7/2.png",
