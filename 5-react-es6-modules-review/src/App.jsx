@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 import Watch from "./Components/Watch/Watch";
 import Sunglass from "./Components/Sunglass/Sunglass";
